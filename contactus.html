@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - EngineeredPrompt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: proxima-nova,sans-serif !important;
+            line-height: 1.6;
+            color: #333;
+            background-color:#fff;
+        }
+        header {
+           background:rgba(58, 55, 55, 0.95);
+           color: #fff;
+           position: sticky;
+           top: 0;
+           z-index: 1000;
+           padding: 0.5rem 5%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+        }
+        .logo {
+          font-size: 1.75rem;
+          font-weight: 700;
+          font-family:proxima-nova,sans-serif !important;
+        }
+        .logo span {
+          color: #fff;
+        }
+        .logo.gear {
+         color: rgb(135, 149, 14);
+         margin: 0 0.2rem;
+         font-size: 3rem;
+         line-height: 1; 
+         vertical-align: middle; 
+        }
+        nav a {
+         color: white;
+         text-decoration: none;
+         padding: 12px 20px;
+         font-size: 16px;
+         font-weight: 600;
+         text-transform: uppercase;
+         transition: background-color 0.3s;
+         gap: 1.5rem;
+        }
+        nav a:hover {
+         color: #EAEAEA;
+         border-radius: 5px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 40px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 40px;
+            color: #1e2a47;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+            text-align:left;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .contact-info,
+        .social-links {
+            margin-bottom: 8px;
+        }
+        .contact-info p,
+        .social-links a {
+            font-size: 20px;
+            color: #555;
+            text-align:left;
+            margin-top:10px;
+            
+        }
+        .social-links a {
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: 600;
+            color: #4a4a4a;
+            transition: color 0.3s;
+        }
+        .social-links a:hover {
+            color: #1d1c1d;
+        }
+        footer {
+            background: rgba(58, 55, 55, 0.95);
+            text-align: center !important;
+            padding: 1rem 0;
+            margin-top: auto;
+        }
+        footer.footer-style-2 p {
+        color: white !important;
+    }
+    /* Hero Section for Login */
+    .hero {
+            background:#EAEAEA;
+            color: #333;
+            text-align: center;
+            padding: 0.5rem 5%;
+        }
+        .hero h1 {
+            font-size: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 1000px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.8;
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/static/logo.png" alt="AI Prompts Engineered" style="max-height: 80px; width: auto;">
+            </a>
+        </div>
+            <nav>
+              <a href="{{ url_for('home') }}">Home</a>
+              <a href="#contact-info">Contact Information</a>
+              <a href="#social-links">Social Media</a>
+            </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <p>Experience the power of Engineered Prompts. Securely login to access your personalized prompts and join the innovative AI community.</p>
+    </section>
+
+    <!-- Contact Us Content -->
+    <div class="container">
+        <h1>Contact Us</h1>
+        We're always happy to hear from you! Whether you have a product inquiry, need support, or simply want to stay updated, you can connect with us through the following channels:
+
+        <!-- Contact Information Section -->
+        <section id="contact-info" class="contact-info">
+            <h2>Our Contact Information</h2>
+            <p><strong>Email:</strong> <a href="mailto:support@engineeredprompt.com">support@engineeredprompt.com</a></p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Office Address:</strong> EngineeredPrompt, 123 AI Innovation Lane, Tech City, CA 94000, USA</p>
+            <p><strong>Business Hours:</strong> Monday - Friday, 9 AM - 5 PM (PST)</p>
+        </section>
+
+        <!-- Social Media Links Section -->
+        <section id="social-links" class="social-links">
+            <h2>Connect With Us On Social Media</h2>
+            Stay updated and interact with us across the web. Follow our social media pages for the latest developments, announcements, and insights:
+            <p><a href="https://www.linkedin.com/in/engineeredprompt-engineeredprompt-577a13342/" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/engineeredpromhttps://twitter.com/engineeredpromp" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/profile.php?id=61569854413616" target="_blank">Facebook</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=engineeredprompt@gmail.com" target="_blank">Mail</a>
+        </section>
+    </div>
+    <div>
+        <footer class="footer-style-2">
+            <p>&copy; 2024 ENGINEERED PROMPT. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

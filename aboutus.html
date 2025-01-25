@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EngineeredPrompt</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: proxima-nova, sans-serif !important;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+        header {
+            background: rgba(58, 55, 55, 0.95);
+            color: #fff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 0.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            font-family: proxima-nova, sans-serif !important;
+        }
+        .logo span {
+            color: #fff;
+        }
+        .logo.gear {
+            color: rgb(135, 149, 14);
+            margin: 0 0.2rem;
+            font-size: 3rem;
+            line-height: 1;
+            vertical-align: middle;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            transition: background-color 0.3s;
+            gap: 1.5rem;
+        }
+        nav a:hover {
+            color: #EAEAEA;
+            border-radius: 5px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 10px;
+            text-align: left;
+        }
+        p {
+            line-height: 1.7;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        /* Hero Section for Login */
+        .hero {
+            background:#EAEAEA;
+            color: #333;
+            text-align: center;
+            padding: 0.5rem 5%;
+        }
+        .hero h1 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 1000px;
+            margin: 0 auto 1.5rem;
+            line-height: 1.8;
+            text-align: left;
+        }
+        footer {
+            background: rgba(58, 55, 55, 0.95);
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: auto;
+        }
+        footer.footer-style-2 p {
+        color: white !important;
+    }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/static/logo.png" alt="AI Prompts Engineered" style="max-height: 80px; width: auto;">
+            </a>
+        </div>
+            <nav>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="#about">About</a>
+                <a href="#mission">Mission</a>
+                <a href="#core-values">Core Values</a>
+                <a href="#team">Team</a>
+                <a href="#contact">Contact</a>
+                <a href="#achievements">Achievements</a>
+            </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <p>Experience the power of Engineered Prompts. Securely login to access your personalized prompts and join the innovative AI community.</p>
+    </section>
+
+    <!-- About Us Content -->
+    <div class="container">
+        <h1>About Us</h1>
+        <section id="about">
+            <h2>Our Story</h2>
+            <p>EngineeredPrompt was founded with the vision of making AI-driven tools more accessible and efficient. Our platform provides innovative solutions for prompt engineering and AI model development, catering to developers, data scientists, and businesses looking to enhance their capabilities with cutting-edge technologies. Our commitment to continuous improvement drives us to create powerful solutions that are both user-friendly and highly scalable.</p>
+        </section>
+        <section id="mission">
+            <h2>Our Mission</h2>
+            <p>We aim to simplify the process of integrating AI models into real-world applications while providing the tools necessary to optimize performance. Our mission is to bridge the gap between machine learning and business success through robust, easy-to-use solutions that help our users unleash the full potential of AI. We believe in empowering developers and businesses to achieve remarkable outcomes with minimal effort.</p>
+        </section>
+        <section id="core-values">
+            <h2>Our Core Values</h2>
+            <p>
+            <ul>
+                <li><strong>Innovation:</strong> We are dedicated to continuously evolving and offering state-of-the-art AI tools that stay ahead of the curve.</li>
+                <li><strong>Collaboration:</strong> We believe in building strong relationships with our users, partners, and stakeholders to create tailored solutions.</li>
+                <li><strong>Transparency:</strong> We ensure clear communication and openness in our technology, services, and business practices.</li>
+                <li><strong>Sustainability:</strong> We are committed to implementing sustainable practices that reduce our environmental impact and support global eco-friendly initiatives.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section id="vision">
+            <h2>Our Vision</h2>
+            <p>Our vision is to make AI accessible and intuitive for all users, regardless of technical expertise, and to become the leading provider of AI-powered solutions. We aim to transform industries by enabling data-driven decision-making and problem-solving with powerful tools. With a future-focused approach, we are working to create technologies that can address the most pressing challenges across various domains.</p>
+        </section>
+
+        <section id="achievements">
+            <h2>Key Achievements</h2>
+            <p>
+            <ul>
+                <li><strong>User Growth:</strong> EngineeredPrompt has already empowered thousands of developers and businesses, driving successful AI-driven projects worldwide.</li>
+                <li><strong>Strategic Partnerships:</strong> We have forged strategic alliances with key players in the tech industry, ensuring seamless integration of our tools in various workflows.</li>
+                <li><strong>Industry Recognition:</strong> EngineeredPrompt has been praised in multiple industry reports and recognized for its excellence in AI innovation, performance, and user experience.</li>
+            </ul>
+            </p>
+        </section>
+
+        <section id="team">
+            <h2>Our Team</h2>
+            <p>Our team is composed of dedicated experts in AI, machine learning, software engineering, and business strategy. We are passionate about creating innovative solutions that empower our users to harness the power of artificial intelligence in their projects. Together, we strive to shape the future of AI and make it a tool for everyone.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or would like to learn more about EngineeredPrompt, feel free to reach out to us:</p>
+            <ul>
+                <li><strong>Email:</strong> support@engineeredprompt.com</li>
+                <li><strong>Phone:</strong> +1 (800) 123-4567</li>
+                <li><strong>Address:</strong> 123 AI Avenue, Silicon Valley, CA, 94016</li>
+            </ul>
+        </section>
+    </div>
+    <div>
+        <footer class="footer-style-2">
+            <p>&copy; 2024 ENGINEERED PROMPT. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
