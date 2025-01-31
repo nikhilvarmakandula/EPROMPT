@@ -53,7 +53,7 @@ nav ul li a {
     text-decoration: none;
     padding: 12px 20px;
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     transition: background-color 0.3s;
 }
@@ -617,7 +617,7 @@ textarea {
 
 #resource-center h2 {
     font-size: 2rem;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
     color: #2c3e50;
 }
 
