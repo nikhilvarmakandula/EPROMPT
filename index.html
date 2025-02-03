@@ -61,8 +61,9 @@
     
     <!-- Vision Section -->
     <section class="vision-section">
-        <p><b>OUR VISION:</b> At the forefront of AI, we firmly believe Engineered Prompts will play a vital role. This platform is an honest attempt to build an Engineered prompt warehouse to achieve PROMPT DRIVEN, Business Critical, NO-CODE/LOW-CODE, and Comprehensive Prompt Solutions.</p>
+        <p><b>OUR VISION:</b> Engineered Prompts will revolutionize AI-driven solutions. This platform builds an <b>Engineered Prompt Warehouse</b> to enable <b>Prompt-Driven, Business-Critical, No-Code/Low-Code</b> solutions. Our goal is to deliver comprehensive, structured prompts that drive efficiency across industries.</p>
     </section>
+    
     <section style="
     position: relative;
     text-align: center;
@@ -82,50 +83,62 @@
         z-index: 1;">
     </div>
 
-    <!-- Content -->
-    <div style="position: relative; z-index: 2;">
-        <h1 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 1rem;font-family: inherit;">
-            Discover and Share "Engineered" AI Prompts
-        </h1>
-        <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-            It is a thrilling experience to Engineer a Business and Machine critical prompt! 
-            We have an opportunity to Experience The thrill each time we share an Engineered prompt. 
-            Collaborate and innovate with the community!
-        </p>
-        
-        <!-- Button for not logged-in users -->
-        {% if not is_logged_in %}
-            <a href="login.html" style="
-                display: inline-block;
-                padding: 0.8rem 2rem;
-                font-size: 1.2rem;
-                background: #201f1f;
-                color: #ffffff;
-                border-radius: 50px;
-                text-decoration: none;
-                font-weight: bold;
-                cursor: pointer;
-                margin-right: 1rem;">
-                <b>Explore Our Prompts</b>
-            </a>
-        {% endif %}
-        
-        <!-- Button for logged-in users pointing to the table -->
-        {% if is_logged_in %}
-            <a href="#warehouse-prompt-wrapper" style="
-                display: inline-block;
-                padding: 0.8rem 2rem;
-                font-size: 1.2rem;
-                background: #506349;
-                color: #ffffff;
-                border-radius: 50px;
-                text-decoration: none;
-                font-weight: bold;
-                cursor: pointer;">
-                <b>Explore Our Prompts</b>
-            </a>
-        {% endif %}
-    </div>
+<!-- Content -->
+<div style="position: relative; z-index: 2; text-align: center;">
+    <h1 style="font-size: 1.8rem; font-weight: bold; margin-bottom: 1.5rem; font-family: inherit;">
+        Discover and Share "Engineered" AI Prompts
+    </h1>
+
+    <p style="font-size: 1.4rem; font-weight: bold; color: #dee600; margin-bottom: 1rem;">
+        GREATLY ENGINEERED PROMPTS could produce GREAT PRODUCT at a CLICK!
+    </p>
+
+    <p style="font-size: 1.4rem; font-weight: bold; color: #c0ee0a; margin-bottom: 1rem;">
+        We drive PROMPT-DRIVEN INTELLIGENCE, leading breakthrough B2B and B2C innovations
+     </p>
+
+     <p style="font-size: 1.4rem; font-weight: bold; color: #dee600; margin-bottom: 1rem;">
+        A Curated Critical Prompt generates Business-Critical Solutions, impacting industries.
+    </p>
+
+    <p style="font-size: 1.4rem; font-weight: bold; color: #c0ee0a; margin-bottom: 1rem;">
+        Our mission is No-Code/Low-Code Enablement, delivering AI Prompt Solutions across all sectors.
+    </p>
+
+    <!-- Button for not logged-in users -->
+    {% if not is_logged_in %}
+        <a href="login.html" style="
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            font-size: 1.2rem;
+            background: #201f1f;
+            color: #ffffff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 1rem;">
+            <b>Explore Our Prompts</b>
+        </a>
+    {% endif %}
+    
+    <!-- Button for logged-in users pointing to the table -->
+    {% if is_logged_in %}
+        <a href="#warehouse-prompt-wrapper" style="
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            font-size: 1.2rem;
+            background: #506349;
+            color: #ffffff;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;">
+            <b>Explore Our Prompts</b>
+        </a>
+    {% endif %}
+</div>
+
 </section>
 
 
