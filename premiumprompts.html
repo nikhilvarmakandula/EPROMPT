@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Prompts</title>
+    <style>
+        /* General Body and Flexbox Setup */
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: proxima-nova, sans-serif !important;
+            line-height: 1.6;
+            color: #fff;
+            background-color: #fff;
+            background-size: cover;
+            background: url('/static/info.jpg') no-repeat center center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        /* Header Style */
+        header {
+           background: rgba(58, 55, 55, 0.95);
+           color: #fff;
+           position: sticky;
+           top: 0;
+           z-index: 1000;
+           padding: 0.5rem 5%;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           width: 189%;
+        }
+        .logo {
+          font-size: 1.75rem;
+          font-weight: 700;
+        }
+        nav a {
+         color: white;
+         text-decoration: none;
+         padding:  12px 20px;
+         font-size: 17px;
+         font-weight: 700;
+         text-transform: uppercase;
+         transition: background-color 0.3s;
+         align-items: center;
+        }
+        nav a:hover {
+         color: #EAEAEA;
+         border-radius: 5px;
+        }
+        nav ul {
+    list-style-type: none !important;
+}
+
+
+        /* Container Style */
+        .container {
+            background: rgba(0, 0, 0, 0.85);
+            padding: 40px;
+            border-radius: 15px;
+            max-width: 700px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+            animation: fadeIn 1.5s ease-in-out;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Allow footer to push to the bottom */
+            align-items: center;
+            min-height: 300px; /* Adjust based on content */
+            font-family: proxima-nova,sans-serif !important;
+            line-height: 1.6;
+            margin-top: 50px !important;
+            margin-bottom:40px;
+        }
+
+        /* FadeIn Animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Heading and Text Style */
+        h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        p {
+            font-size: 20px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        /* Button Style */
+        .btn {
+            display: flex;
+            padding: 12px 24px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: black;
+            background-color: #ffcc00;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out;
+            margin: 20px auto;
+        }
+        .btn:hover {
+            background-color: #ffdb4d;
+        }
+
+        /* Footer Style */
+        .footer-style-2 {
+            background: rgba(66, 66, 66, 0.95);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: auto; /* Push footer to the bottom */
+            width: 200%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/">
+                <img src="/static/logo.png" alt="AI Prompts Engineered" style="max-height: 80px; width: auto;">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <section>
+        <div class="container">
+            <!-- Under Construction Banner -->
+            <div class="under-construction"><h2><u><i>UNDER CONSTRUCTION</i></u> !!!!</h2></div>
+            <h1>Premium Prompts</h1>
+            <p>Upgrade your experience with <span class="highlight">EXCLUSIVE, HIGH-QUALITY PROMPTS</span> tailored for business, automation, marketing, and more.</p>
+            <p>As of now,<span class="highlight"> <b>ALL PROMPTS ARE AVAILABLE FOR FREE</b></span>, but in the future, game-changing prompts will be offered through a premium membership.</p>
+            <a href="#" class="btn">Unlock Premium (Coming Soon)</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-style-2">
+        <p>&copy; 2024 ENGINEERED PROMPT. All rights reserved.</p>
+    </footer>
+</body>
+</html>
