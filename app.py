@@ -11,8 +11,8 @@ app.secret_key = 'your_secret_key'  # Replace with a secure key
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USERNAME'] = 'nikhilvarma.kandula@gmail.com'  # Replace with your email
-app.config['MAIL_PASSWORD'] = 'wcrd vrsa nmnq acqp'  # Replace with app-specific password
+app.config['MAIL_USERNAME'] = 'engineeredprompt1@gmail.com'  # Replace with your email
+app.config['MAIL_PASSWORD'] = 'jzay zakn jzwa qrzm'  # Replace with app-specific password
 app.config['MAIL_DEFAULT_SENDER'] = 'your_email@gmail.com'
 
 mail = Mail(app)
@@ -226,7 +226,7 @@ def submit_feedback():
         # Prepare the email
         subject = "New Feedback from Website"
         body = f"Feedback: {feedback}\n\nUser Email: {user_email or 'Not Provided'}"
-        msg = Message(subject, recipients=['nikhilvarma.kandula@gmail.com'])  # Replace with your email
+        msg = Message(subject, recipients=['engineeredprompt1@gmail.com'])  # Replace with your email
         msg.body = body
 
         # Send the email
